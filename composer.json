@@ -1,6 +1,7 @@
 {
     "name": "ajeya/laravel-contact-form",
     "description": "A basic contact form package for laravel",
+    "version": "0.1.0-dev",
     "keywords": [
         "ajeya",
         "laravel-contact-form"
