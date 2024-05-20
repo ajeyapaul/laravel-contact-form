@@ -1,0 +1,54 @@
+{
+    "name": "ajeya/laravel-contact-form",
+    "description": "A basic contact form package for laravel",
+    "keywords": [
+        "ajeya",
+        "laravel-contact-form"
+    ],
+    "homepage": "https://github.com/ajeya/laravel-contact-form",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Ajeya Paul",
+            "email": "paulajeya@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "illuminate/support": "^11.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.0",
+        "phpunit/phpunit": "^11.0.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ajeya\\LaravelContactForm\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Ajeya\\LaravelContactForm\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ajeya\\LaravelContactForm\\LaravelContactFormServiceProvider"
+            ],
+            "aliases": {
+                "LaravelContactForm": "Ajeya\\LaravelContactForm\\LaravelContactFormFacade"
+            }
+        }
+    }
+}
